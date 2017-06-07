@@ -6,9 +6,10 @@
 </head>
 <body>
     
-    <form method="post" action="//formspree.io/goworko.tomasz@poczta.fm"></form>
+   
     
-    <form>
+    <form action="//formspree.io/goworko.tomasz@poczta.fm"
+       method="POST">
        
         <label for="name">Imię:</label><br>
         <input type="text" id="name"><br>
@@ -21,20 +22,24 @@
         
         <label for="phone">Telefon:</label><br>
         <input type="text" id="phonenumber"><br>
+        <br>
         
-        <label for="user-option">Wybierz miasto:</label><br>
+        <label for="option">Wybierz miasto:</label><br>
         <select id="user=option">
             <option value="1">Kraków</option>
             <option value="2">Warszawa</option>
             <option value="3">Gdańsk</option>
         </select>
         <br>
-        <form action="wybierz">Wybierz płeć:<br>
-            <input type="radio" name="mezczyzna" value="plec" />Mężczyzna<br>
-	        <input type="radio" name="kobieta" value="plec" />Kobieta
-        </form>
+        
+        <form>
+             <label for="name">Wybierz płeć</label><br>
+              <input type="radio" name="gender" value="male" checked> Męzczyzna<br>
+              <input type="radio" name="gender" value="female"> Kobieta<br>
+              
+        </form> 
         <br>
-        <form action="zgoda">
+        <form>
 	            <input type="checkbox" name="nazwa" value="1" />Wyrażam zgodę na przetwarzanie danych
         </form>
         <br>
@@ -44,6 +49,7 @@
         
         <br>
         <input type="submit" value="Wyslij"><br>
+        
     </form>
     
 </body>
